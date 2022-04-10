@@ -1,0 +1,51 @@
+$ cd Desktop
+$ git clone  https://github.com/trichko111/SI_2022_lab1_203055.git
+$ cd SI_2022_lab1_203055
+$ notepad shopping_list.txt
+$ git add .
+$ notepad shopping_list.txt
+$ git commit -m "Add 5 items to the shopping list"
+$ git add .
+$ git commit -m "Add quantities to the items"
+$ git branch branch1
+$ git branch branch2
+$ git log --oneline
+a2e020c (HEAD -> master, branch2, branch1) Add quantities to the items
+076319a Add 5 items to the shopping list
+626a1cf (origin/master, origin/HEAD) Update README.md
+9acd8dd Initial commit
+$ git push --all origin
+$ git checkout branch1
+$ git add .
+$ git commit -m "Change quantity of item #5"
+$ git checkout master
+$ notepad shopping_list.txt
+$ git add .
+$ git commit -m "Change quantity of item #2"
+$ git push --all origin
+$ git checkout branch2
+$ notepad shopping_list.txt
+$ git add .
+$ git commit -m "Modify item #4"
+$ git log --oneline
+6d316ad (HEAD -> branch2) Modify item #4
+a2e020c (origin/branch2) Add quantities to the items
+076319a Add 5 items to the shopping list
+626a1cf Update README.md
+9acd8dd Initial commit
+$ notepad shopping_list.txt
+$ git add .
+$ git commit --amend -m "Modify item #4 and add item #6"
+$ git log --oneline
+814323d (HEAD -> branch2) Modify item #4 and add item #6
+a2e020c (origin/branch2) Add quantities to the items
+076319a Add 5 items to the shopping list
+626a1cf Update README.md
+9acd8dd Initial commit
+$ git checkout master
+$ git merge branch1 - > Nema konflikt, "ort" strategy
+$ git merge branch2 -> Konflikt, resen so editiranje na shopping_list.txt i prifakjanje na ednite promeni
+$ notepad shopping_list.txt
+$ git add .
+$ git commit -i shopping_list.txt -m "Conflict fix"
+
