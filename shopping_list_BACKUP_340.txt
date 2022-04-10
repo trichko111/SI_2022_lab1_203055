@@ -5,4 +5,7 @@ Leb x 3
 Oriz x 4
 Sok x 6
 =======
+Voda x 4
+Sok x 5
+Pomada x9
 >>>>>>> branch2
